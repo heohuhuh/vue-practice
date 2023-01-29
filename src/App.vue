@@ -1,7 +1,7 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <div>
-    <h4>xx 원룸</h4>
+    <h4 class="red" :style="Style">xx 원룸</h4>
     <p>{{ price1 }} 만원</p>
   </div>
   <div>
@@ -18,6 +18,7 @@ export default {
     return {
       price1: 80,
       price2: 70,
+      Style: "color:red",
     };
   },
   components: {},
